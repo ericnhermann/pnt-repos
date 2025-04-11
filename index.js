@@ -40,3 +40,8 @@ console.log(caros);
 
 const gorra = productos.find(producto => producto.nombre === "Gorra");
 console.log(gorra);
+
+//9
+
+const hayCaro = productos.some(producto => producto.precio > 10000);
+console.log(hayCaro);
