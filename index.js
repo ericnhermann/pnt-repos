@@ -25,3 +25,8 @@ for (let producto of productos) {
 
   const nombres = productos.map(producto => producto.nombre);
   console.log(nombres);
+
+  //6
+
+  const ropa = productos.filter(producto => producto.categoria === "Ropa");
+console.log(ropa);
