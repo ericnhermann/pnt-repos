@@ -14,3 +14,9 @@ console.log(productos[0].nombre);
 for (let producto of productos) {
     console.log(`Producto: ${producto.nombre} - Precio: $${producto.precio}`);
   }
+
+  //3
+
+  productos.forEach(producto => {
+    console.log(`Producto: ${producto.nombre} - Precio: $${producto.precio}`);
+  });
