@@ -35,3 +35,8 @@ console.log(ropa);
 
 const caros = productos.filter(producto => producto.precio > 3000);
 console.log(caros);
+
+//8
+
+const gorra = productos.find(producto => producto.nombre === "Gorra");
+console.log(gorra);
