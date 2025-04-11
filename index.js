@@ -5,7 +5,12 @@ const productos = [
     { id: 4, nombre: "Gorra", precio: 1200, categoria: "Accesorios" },
     { id: 5, nombre: "Campera", precio: 9500, categoria: "Ropa" }
   ];
-  
-  console.log(productos[0].nombre); 
+
+//1
+console.log(productos[0].nombre); 
   
 
+//2
+for (let producto of productos) {
+    console.log(`Producto: ${producto.nombre} - Precio: $${producto.precio}`);
+  }
