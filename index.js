@@ -30,3 +30,8 @@ for (let producto of productos) {
 
   const ropa = productos.filter(producto => producto.categoria === "Ropa");
 console.log(ropa);
+
+//7
+
+const caros = productos.filter(producto => producto.precio > 3000);
+console.log(caros);
