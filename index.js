@@ -20,3 +20,8 @@ for (let producto of productos) {
   productos.forEach(producto => {
     console.log(`Producto: ${producto.nombre} - Precio: $${producto.precio}`);
   });
+
+  //4
+
+  const nombres = productos.map(producto => producto.nombre);
+  console.log(nombres);
