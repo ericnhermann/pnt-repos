@@ -45,3 +45,31 @@ console.log(gorra);
 
 const hayCaro = productos.some(producto => producto.precio > 10000);
 console.log(hayCaro);
+
+//9
+const todosMayor1000 = productos.every(producto => producto.precio > 1000);
+console.log(todosMayor1000);
+
+//10
+const contieneCampera = nombres.includes("Campera");
+console.log(contieneCampera);
+
+//11
+const productosOrdenados = [...productos].sort((a, b) => a.precio - b.precio);
+console.log(productosOrdenados);
+
+//12
+const mensajesPersonalizados = productos.map(producto => 
+    `El producto ${producto.nombre} cuesta $${producto.precio} y pertenece a la categoría ${producto.categoria}.`
+);
+console.log(mensajesPersonalizados);
+
+//13
+const nuevosProductos = [
+    { id: 6, nombre: "Bufanda", precio: 800, categoria: "Accesorios" },
+    { id: 7, nombre: "Botas", precio: 6500, categoria: "Calzado" }
+];
+
+const todosLosProductos = [...productos, ...nuevosProductos];
+console.log(todosLosProductos);
+
